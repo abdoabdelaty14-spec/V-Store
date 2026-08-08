@@ -1,0 +1,147 @@
+.orders-page {
+    min-height: calc(100vh - 80px);
+    background: #f8f9fa;
+    padding: 50px 80px;
+}
+
+.orders-header {
+    margin-bottom: 40px;
+}
+
+.orders-header h1 {
+    font-size: 38px;
+    margin-bottom: 8px;
+}
+
+.orders-header p {
+    color: #777;
+}
+
+.orders-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.order-card {
+    background: white;
+    border-radius: 14px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+.order-top {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.order-top div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.order-top span {
+    color: #777;
+    font-size: 13px;
+}
+
+.status {
+    color: #16a34a;
+}
+
+.order-products {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 25px 0;
+}
+
+.order-product {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.order-product img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.order-product h3 {
+    font-size: 16px;
+    margin-bottom: 7px;
+}
+
+.order-product p {
+    color: #777;
+    margin-bottom: 7px;
+}
+
+.order-product strong {
+    color: #2563eb;
+}
+
+.order-bottom {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 20px;
+}
+
+.order-bottom strong {
+    color: #2563eb;
+}
+
+.no-orders {
+    min-height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    gap: 12px;
+}
+
+.no-orders svg {
+    font-size: 60px;
+    color: #2563eb;
+}
+
+.no-orders p {
+    color: #777;
+}
+
+.no-orders a {
+    margin-top: 10px;
+
+    background: #2563eb;
+    color: white;
+
+    padding: 13px 25px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+}
+
+@media (max-width: 800px) {
+    .orders-page {
+        padding: 40px 20px;
+    }
+
+    .order-top {
+        grid-template-columns: 1fr;
+    }
+}

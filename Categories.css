@@ -1,0 +1,190 @@
+.categories-section {
+    padding: 60px 30px;
+
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+.categories-header {
+    text-align: center;
+
+    margin-bottom: 35px;
+}
+
+.categories-header > span {
+    color: #2563eb;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.categories-header h2 {
+    margin: 8px 0;
+
+    font-size: 32px;
+
+    color: #111827;
+}
+
+.categories-header p {
+    color: #64748b;
+
+    margin: 0 auto;
+
+    max-width: 550px;
+}
+
+
+/* =========================
+   CATEGORIES GRID
+========================= */
+
+.categories-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+
+    max-width: 900px;
+
+    margin: auto;
+}
+
+
+/* =========================
+   CATEGORY CARD
+========================= */
+
+.category-card {
+    position: relative;
+
+    height: 145px;
+
+    padding: 0;
+
+    border: none;
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    background: #eee;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.08);
+
+    transition: all 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================
+   IMAGE
+========================= */
+
+.category-image {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.4s ease;
+}
+
+.category-card:hover .category-image {
+    transform: scale(1.08);
+}
+
+
+/* =========================
+   DARK OVERLAY
+========================= */
+
+.category-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    padding: 20px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.05)
+        );
+
+    color: white;
+}
+
+
+/* =========================
+   TEXT
+========================= */
+
+.category-card h3 {
+    margin: 0 0 5px;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    color: white;
+}
+
+.category-card span {
+    color: #e5e7eb;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+    .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        max-width: 600px;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    .categories-grid {
+        grid-template-columns: 1fr;
+    }
+
+}

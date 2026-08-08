@@ -1,0 +1,248 @@
+.checkout-page {
+    min-height: calc(100vh - 80px);
+    background: #f8f9fa;
+    padding: 50px 80px;
+}
+
+.checkout-header {
+    margin-bottom: 40px;
+}
+
+.checkout-header h1 {
+    font-size: 38px;
+    margin-bottom: 8px;
+}
+
+.checkout-header p {
+    color: #777;
+}
+
+.checkout-container {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 30px;
+    align-items: start;
+}
+
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.checkout-section {
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+.checkout-section h2 {
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.form-group input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.payment-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.payment-option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.payment-option:hover {
+    border-color: #2563eb;
+}
+
+.payment-option input {
+    accent-color: #2563eb;
+}
+
+.checkout-summary {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 100px;
+}
+
+.checkout-summary h2 {
+    margin-bottom: 25px;
+}
+
+.checkout-products {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.checkout-product {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.checkout-product img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.checkout-product h4 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.checkout-product p {
+    color: #777;
+    font-size: 13px;
+}
+
+.checkout-summary hr {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 25px 0;
+}
+
+.summary-line {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.checkout-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 21px;
+    margin-top: 25px;
+}
+
+.checkout-total strong {
+    color: #2563eb;
+}
+
+.place-order {
+    border: none;
+    background: #16a34a;
+    color: white;
+    padding: 16px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    transition: 0.3s;
+}
+
+.place-order:hover {
+    background: #15803d;
+}
+
+.empty-checkout {
+    min-height: 70vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 15px;
+
+    text-align: center;
+}
+
+.empty-checkout p {
+    color: #777;
+}
+
+.empty-checkout button {
+    border: none;
+    background: #2563eb;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    .checkout-page {
+        padding: 40px 25px;
+    }
+
+    .checkout-container {
+        grid-template-columns: 1fr;
+    }
+
+    .checkout-summary {
+        position: static;
+    }
+}
+
+@media (max-width: 600px) {
+    .checkout-page {
+        padding: 25px 15px;
+    }
+
+    .checkout-header h1 {
+        font-size: 30px;
+    }
+
+    .checkout-section {
+        padding: 20px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}
